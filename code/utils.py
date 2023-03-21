@@ -5,10 +5,7 @@ DATASETS = [
     "clmentbisaillon/fake-and-real-news-dataset"
 ]
 COMPETITION = "fake-news"
-DATASET_NAMES = [
-    "fake-and-real-news-dataset",
-    "fake-news",
-    "fakenewsdataset"
-]
 
 ROOT_DIR = Path(__file__).parent.parent
+EXTRACTED_SOURCE = f"{ROOT_DIR}/data/extracted"
+RAW_PATH = f"{ROOT_DIR}/data/raw"

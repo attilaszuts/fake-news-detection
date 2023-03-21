@@ -8,6 +8,8 @@ packages = [{include = "fake_news_detection"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+kaggle = "^1.5.13"
+pandas = "^1.5.3"
 
 
 [build-system]

@@ -45,7 +45,7 @@ def combine_datasets(train_dfs: list[DataFrame], test_dfs: list[DataFrame]) -> t
     return train_df, test_df
 
 
-if __name__ == "__main__":
+def create_raw() -> None:
     train1, test1 = process_fake_news()
     train2, test2 = process_fake_and_real_news()
 
@@ -53,5 +53,9 @@ if __name__ == "__main__":
 
     if not os.path.exists(RAW_PATH):
         os.mkdir(f"{RAW_PATH}")
-    train.to_csv(f"{RAW_PATH}/train.csv")
-    test.to_csv(f"{RAW_PATH}/test.csv")
+    train.to_csv(f"{RAW_PATH}/train.csv", index=False)
+    test.to_csv(f"{RAW_PATH}/test.csv", index=False)
+
+
+if __name__ == "__main__":
+    create_raw()

@@ -1,8 +1,12 @@
-from code.create_raw_data import create_raw
-from code.data_cleaning import clean
-from code.data_download import download
+from code.data import clean, save, download, create_raw
 
 if __name__ == "__main__":
+    print("downloading...")
     download()
-    clean()
+    print("creating raw...")
     create_raw()
+    print("cleaning...")
+    df = clean()
+    print("saving...")
+    save(df)
+    print("done.")

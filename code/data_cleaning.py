@@ -1,6 +1,5 @@
-def clean() -> None:
-    pass
-
+from code.data import clean, save
 
 if __name__ == "__main__":
-    clean()
+    df = clean()
+    save(df)

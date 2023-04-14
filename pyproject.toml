@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["attilaszuts <45080765+attilaszuts@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "fake_news_detection"}]
+packages = []
 
 [tool.poetry.dependencies]
 python = "^3.9"
